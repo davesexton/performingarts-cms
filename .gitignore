@@ -13,6 +13,10 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# Ignore files containing sensitive info
+/config/config.yml
+
 # Rails
 .bundle
 db/*.sqlite3
