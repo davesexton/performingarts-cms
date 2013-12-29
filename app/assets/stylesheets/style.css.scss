@@ -78,3 +78,14 @@ header {
   top: 100px;
 }
 
+#new_inquiry {
+  div {
+    vertical-align: top;
+  }
+  label {
+    width: 100px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 5px;
+  }
+}
