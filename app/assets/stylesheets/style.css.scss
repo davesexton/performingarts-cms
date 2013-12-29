@@ -124,3 +124,16 @@ header {
     margin-top: 5px;
   }
 }
+#news-page{
+  article {
+    border-top: 1px solid $text_color;
+    small {
+      font-style: italic;
+      color: darken($text_color, 9%);
+    }
+    h2 a {
+      font-size: 14pt;
+      color: darken($highlight_color, 18%);
+    }
+  }
+}
