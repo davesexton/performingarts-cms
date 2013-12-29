@@ -156,6 +156,8 @@ GEM
       friendly_id (~> 4.0.9)
       refinerycms-core (~> 2.1.1)
       refinerycms-settings (~> 2.1.0)
+    refinerycms-page-images (2.1.0)
+      refinerycms-pages (~> 2.1.0)
     refinerycms-pages (2.1.1)
       awesome_nested_set (~> 2.1.3)
       babosa (!= 0.3.6)
@@ -212,6 +214,7 @@ DEPENDENCIES
   refinerycms-acts-as-indexed (~> 1.0.0)
   refinerycms-inquiries (~> 2.1.0)
   refinerycms-news (~> 2.1.0)
+  refinerycms-page-images (~> 2.1.0)
   sass-rails (~> 3.2.3)
   sqlite3
   uglifier (>= 1.0.3)
