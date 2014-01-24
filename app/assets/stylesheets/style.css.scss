@@ -5,6 +5,7 @@ $background_color: #099d9d;
 $text_color: #0D5151;
 $highlight_color: #AA1B84;
 $dark_color: #0D5151;
+$default-border-radius: 16px;
 
 body {
   background-image: image-url('background.gif');
@@ -152,14 +153,17 @@ a {
     @include column(6);
     @include last();
     background-color: $background_color;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
+    @include border-radius();
   }
   #news_item_truncated > h2 > a {
 
   }
-  #news_archive_widget {
+  #news_archive_widget, #recent_news_items {
     background-color: $background_color;
+    @include border-radius();
     h2 {
+      @include border-radius();
       font-size: 12pt;
       text-transform: uppercase;
       text-align: center;
@@ -174,6 +178,8 @@ a {
     ul {
       list-style-type: none;
       font-size: 12pt;
+      margin: 0px;
+      padding: 0px;
       a {
         text-transform: uppercase;
         font-size: small;
@@ -187,7 +193,20 @@ a {
       }
       li {
         font-size: 12pt;
-        margin-bottom: 3px;
+        margin-bottom: 4px;
+        margin-top: 4px;
+        //margin-right: 4px;
+        //padding-right: 4px;
+        &:nth-child(odd) {
+          background-color: darken($background_color, 3%);
+        }
+        a {
+          margin-left: 10px;
+          padding-top: 6px;
+          padding-bottom: 6px;
+          padding-right: 6px;
+          display: inline-block;
+        }
       }
     }
   }
