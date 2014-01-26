@@ -130,20 +130,15 @@ a {
     margin-top: 5px;
   }
 }
-#news-page{
-  article {
-    border-top: 1px solid $text_color;
-    small {
-      font-style: italic;
-      color: darken($text_color, 9%);
-    }
-    h2 a {
-      font-size: 14pt;
-      color: darken($highlight_color, 18%);
-    }
+.no_side_body {
+  padding: {
+    left: 40px;
+    right: 40px;
   }
 }
-
+.field {
+  margin-bottom: 10px;
+}
 #news-page {
   #body {
     @include prepend(1);
@@ -158,6 +153,26 @@ a {
   }
   #news_item_truncated > h2 > a {
 
+  }
+  #body_content_title {
+    padding-left: 40px;
+  }
+  article {
+    border-top: 1px solid $text_color;
+    small, time {
+      font-style: italic;
+      color: darken($text_color, 9%);
+    }
+    h1, h2 {
+      a {
+        font-size: 14pt;
+        color: darken($highlight_color, 18%);
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
   }
   #news_archive_widget, #recent_news_items {
     background-color: $background_color;
@@ -181,8 +196,8 @@ a {
       margin: 0px;
       padding: 0px;
       a {
-        text-transform: uppercase;
         font-size: small;
+        color: #0000FF;
         text-decoration: none;
         font-family: Verdana;
         color: darken($dark_color, 6%);
@@ -193,13 +208,12 @@ a {
       }
       li {
         font-size: 12pt;
-        margin-bottom: 4px;
-        margin-top: 4px;
-        //margin-right: 4px;
-        //padding-right: 4px;
-        &:nth-child(odd) {
-          background-color: darken($background_color, 3%);
-        }
+        padding-bottom: 4px;
+        padding-top: 4px;
+        border-bottom: solid 1px darken($background_color, 3%);
+        //&:nth-child(odd) {
+        //  background-color: darken($background_color, 3%);
+        //}
         a {
           margin-left: 10px;
           padding-top: 6px;
@@ -211,3 +225,24 @@ a {
     }
   }
 }
+#our-tutors-page {
+  img {
+    margin-right: 20px;
+  }
+  p {
+    padding-left: 230px;
+    margin-bottom: 2px;
+    &:nth-child(1) {
+      padding-left: 0px;
+    }
+  }
+  h3 {
+    border-top: solid 1px darken($background_color, 3%);
+    padding-top: 20px;
+    margin: {
+      bottom: 22px;
+      top: 22px;
+    }
+  }
+}
+
