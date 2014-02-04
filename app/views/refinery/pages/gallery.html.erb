@@ -1,0 +1,17 @@
+<%= render '/refinery/content_page' %>
+<section>
+hi
+</section>
+  hi
+  <div id="gallery">
+    <% @page.images.each do |image| %>
+  <div class="imgHolder">
+        <%= link_to image_tag(image.thumbnail(geometry: "100x100#c").url),
+          image.thumbnail(geometry: "700x600").url,
+          class: 'lightbox',
+          rel: 'gallery'  %>
+  </div>
+   <% end %>
+  </div>
+
+
