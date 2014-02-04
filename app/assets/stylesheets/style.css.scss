@@ -227,21 +227,24 @@ a {
 }
 #our-tutors-page {
   img {
-    margin-right: 20px;
-  }
-  p {
-    padding-left: 230px;
-    margin-bottom: 2px;
-    &:nth-child(1) {
-      padding-left: 0px;
+    margin: {
+      right: 54px;
+      bottom: 20px;
     }
+    float: left;
+    width: 200px;
   }
   h3 {
+    clear: both;
+    margin-top: 10px;
     border-top: solid 1px darken($background_color, 3%);
     padding-top: 20px;
-    margin: {
-      bottom: 22px;
-      top: 22px;
+    font-size: 16px;
+  }
+  p {
+    margin-left: 255px;
+    &:nth-child(1) {
+      margin-left: 0px;
     }
   }
 }
