@@ -255,19 +255,13 @@ a {
   @include last();
   .gallery_item {
     float: left;
-    width: 90px;
-    height: 90px;
-    border: solid 1px #999999;
-    position: relative;
-    @include background-image(linear-gradient(left top, white, $background_color));
-    margin: {
-      right: 5px;
-      bottom: 5px;
-    }
-    img {
-      position: absolute;
-      left: 5px;
-      top: 5px;
-    }
+    width: 100px;
+    height: 100px;
+    //position: relative;
+    //img {
+      //position: absolute;
+      //left: 5px;
+      //top: 5px;
+    //}
   }
 }

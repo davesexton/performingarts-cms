@@ -2,7 +2,8 @@
 <section id="gallery">
   <% @page.images.each do |image| %>
     <div class="gallery_item">
-      <%= link_to image_tag(image.thumbnail(geometry: "80x80#c").url),
+      <%= link_to image_tag(image.thumbnail(geometry: '80x80#c')
+                            .png.convert("-background #666666 +polaroid").url),
           image.thumbnail(geometry: "600x400").url,
           class: 'lightbox',
           rel: 'gallery'  %>
