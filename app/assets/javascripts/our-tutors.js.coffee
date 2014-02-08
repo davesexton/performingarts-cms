@@ -2,8 +2,8 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 
-$ ->
-  if $('#our-tutors-page').length > 0
-    $('img').wrap ->
-      "<a href=\"*\">" + $(@).text() + "</a>"
-    #$('img').lightbox()
+#$ ->
+#  if $('#our-tutors-page').length > 0
+#    $('img').wrap ->
+#      "<a href=\"*\">" + $(@).text() + "</a>"
+#    #$('img').lightbox()
