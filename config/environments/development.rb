@@ -47,5 +47,5 @@ Performingartstest::Application.configure do
     user_name: smtp_settings['user_name'],
     password: smtp_settings['password'],
     enable_starttls_auto: smtp_settings['enable_starttls_auto']
-    }
+  }
 end
