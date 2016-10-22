@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.14'
+gem 'rails', '3.2.22'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -24,8 +24,10 @@ group :assets do
 end
 
 gem 'jquery-rails'
-gem 'wirble'
-gem 'hirb'
+gem 'pry-rails'
+gem 'compass-blueprint'
+#gem 'wirble'
+#gem 'hirb'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -41,6 +43,7 @@ gem 'hirb'
 
 # To use debugger
 # gem 'debugger'
+gem 'byebug'
 
 # Refinery CMS
 gem 'refinerycms', '~> 2.1.0'
